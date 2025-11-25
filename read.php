@@ -55,7 +55,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>View Record</title>
+    <title>View Record | CRUD Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .wrapper{

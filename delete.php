@@ -44,7 +44,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Delete Record</title>
+    <title>Delete Record | CRUD Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .wrapper{
