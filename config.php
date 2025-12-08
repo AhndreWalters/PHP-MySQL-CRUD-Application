@@ -1,15 +1,19 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'mysql-18fa14a0-waltersahndre-5c0e.g.aivencloud.com');
-define('DB_NAME', 'company');
-define('DB_USERNAME', 'avnadmin');
-define('DB_PASSWORD', 'AVNS_JALLZ2rTa2mMGIoPdv6');
-define('DB_PORT', '19155');
- 
+// Get database credentials from environment variables
+$dbServer = getenv('DB_SERVER');
+$dbName = getenv('DB_NAME');
+$dbUsername = getenv('DB_USERNAME');
+$dbPassword = getenv('DB_PASSWORD');
+$dbPort = getenv('DB_PORT');
+
+// Check if environment variables are set
+if (!$dbServer || !$dbName || !$dbUsername || !$dbPassword || !$dbPort) {
+    die("ERROR: Database configuration is not properly set in environment variables.");
+}
+
 /* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
- 
+$link = mysqli_connect($dbServer, $dbUsername, $dbPassword, $dbName, $dbPort);
+
 // Check connection
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
