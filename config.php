@@ -1,17 +1,14 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'mysql-13861cad-walterstrahndre-2a07.j.aivencloud.com');
-define('DB_NAME', 'company');
-define('DB_USERNAME', 'avnadmin');
-define('DB_PASSWORD', 'AVNS_YWYg5JNJWfmJyiPmOPo');
-define('DB_PORT', '24791');
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+$host = getenv('DB_HOST');
+$dbname = getenv('DB_NAME');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$port = getenv('DB_PORT');
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;port=$port", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
 ?>
