@@ -1,4 +1,6 @@
 # PHP MySQL CRUD Application – Employee Management System
+<img src="https://github.com/AhndreWalters/PHP-MySQL-CRUD-Application/blob/main/CRUD-App-Screenshot-1.png"/>
+<img src="https://github.com/AhndreWalters/PHP-MySQL-CRUD-Application/blob/main/CRUD-App-Screenshot-2.png"/>
 
 ## Overview
 <p align="justify">This repository contains a full-stack PHP MySQL CRUD (Create, Read, Update, Delete) application for managing employee records. The application features a complete web interface with data from Grenada, Carriacou, and Petite Martinique, demonstrating professional full-stack development with proper version control and cloud deployment.</p>
