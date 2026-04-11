@@ -46,8 +46,5 @@ CREATE TABLE employees (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR
 ## Deployment
 <p align="justify">The application is deployed using Docker on Render's cloud platform with separate database hosting, demonstrating modern cloud deployment practices and containerized application management.</p>
 
-## License
-<p align="justify">This project is for <b>educational and demonstration purposes</b> showcasing full-stack web development capabilities with PHP and MySQL.</p>
-
-<strong>[© 2025 Ahndre Walters](https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/SIT-Website-Screenshot.png) · PHP MySQL CRUD Application · TAMCC Web Design Course · College Course Assignment</p></strong>
+<strong>[© 2025 Ahndre Walters](https://github.com/AhndreWalters/SpiceIsleTours-Website/blob/main/SIT-Website-Screenshot.png)</strong>
 
